@@ -39,8 +39,8 @@ a {
 
 
 .img {
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
 }
 
 .block {
@@ -74,7 +74,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 30px 0;
+    padding: 30px 0px 0;
 
 }
 
@@ -114,7 +114,7 @@ a {
 }
 
 .style-contact {
-    padding-right: 5px !important;
+    padding-right: 5px;
 }
 
 #menu a:hover {
@@ -154,30 +154,7 @@ a {
     background-repeat: no-repeat;
     width: 700px;
     height: 600px;
-    /* box-shadow: 1px 2px 4px #ffe1a5; */
 }
-
-/* .img-content img {
-    width: 700px;
-    height: 600px;
-    width: 100%;
-    /* border-style: inset; */
-/* box-shadow: -10px -20px 40px #ffe1a5;
-
-}
-
-.img-content img::after {
-    content: ''; */
-/* position: absolute; */
-/* z-index: -1;
-    /* ẩn shadow phía sau hình ảnh */
-/* box-shadow: 0 15px 20px #ffe1a5; */
-/* width: 100%; */
-/* left: 15%; */
-/* một nửa của 30% còn lại */
-/* height: 100px; */
-/* bottom: 0; */
-
 
 .txt-header {
     display: flex;
@@ -197,7 +174,7 @@ a {
 }
 
 .txt-header h1 {
-    font-size: 125px !important;
+    font-size: 125px;
     font-family: Roboto, sans-serif;
     text-transform: uppercase;
     text-shadow: 3px 3px 0px #f0e8e0;
@@ -206,7 +183,7 @@ a {
 
 .txt-header h2,
 .txt-main h2 {
-    font-size: 56.49px !important;
+    font-size: 56.49px;
     text-shadow: 2px 2px 0px #f0e8e0;
     text-transform: uppercase;
 }
@@ -233,8 +210,6 @@ a {
     left: 11px;
 }
 
-.c-txt {}
-
 .c-number {
     font-size: 37.96px;
 }
@@ -252,7 +227,7 @@ a {
 
 /* Main */
 main {
-    margin: 78px 0px 50px;
+    margin: 78px 0px 10px;
 }
 
 .post1 {
@@ -283,6 +258,9 @@ main {
     height: 420px;
     border-radius: 5px;
     background-repeat: no-repeat;
+    display: block;
+    margin: 0px auto;
+    width: 100%;
 }
 
 .img2-post1 {
@@ -453,6 +431,7 @@ main {
     height: 500px;
     margin: 30px auto;
     width: 100%;
+    overflow: hidden;
 }
 
 .title-slide {
@@ -466,10 +445,102 @@ main {
 }
 
 .img-slide img {
-    width: 655px;
+    width: 595px;
     height: 445px;
+    background-size: cover;
 }
 
+
+
+.img-slide {
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 600%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.st {
+    width: 20%;
+    transform: 2s;
+}
+
+
+.nav-m {
+    position: absolute;
+    display: flex;
+    margin-top: 400px;
+}
+
+.m-btn {
+    background-color: #dcdcdc;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.m-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.m-btn:hover {
+    background-color: #ffc045;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+
+.nav-auto {
+
+    position: absolute;
+    margin-top: 430px;
+    display: flex;
+    left: 408px;
+    opacity: 1;
+
+}
+
+.nav-auto div {
+    padding: 10px;
+    border-radius: 10px;
+    transition: 2s;
+
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.nav-auto .a-b1 {
+    background-color: #ffc045;
+}
+
+#radio2:checked~.nav-auto .a-b2 {
+    background-color: #ffc045;
+}
+
+#radio3:checked~.nav-auto .a-b3 {
+    background-color: #ffc045;
+}
 
 /* the end slide */
 
@@ -479,7 +550,7 @@ main {
     width: 100%;
     background: #ffffff;
     overflow: hidden;
-    padding: 8em 0 4em;
+    padding: 2em 0 0;
     position: relative;
     opacity: 1;
     transform: translateY(0px);
@@ -502,7 +573,7 @@ main {
 
 .form h2 {
     margin-top: 20px;
-    font-size: 50px !important;
+    font-size: 50px;
     text-transform: uppercase;
 }
 
@@ -604,7 +675,8 @@ input[type="time"]:focus::before {
 footer {
     margin-bottom: 65px;
     color: #ffffff;
-    padding: 25px;
+    padding: 0 25px;
+    overflow: hidden;
 }
 
 .footer {
@@ -612,8 +684,7 @@ footer {
     margin: 0px auto;
     width: 100%;
     padding: 60px;
-
-    height: 530px;
+    /* height: 530px; */
     background-size: cover;
     background-image: url(./img/Place\ Your\ Design\ Here\ \(Double\ Click\ to\ Edit\).png);
 }
@@ -784,6 +855,10 @@ footer {
     .img-dia {
         display: none;
     }
+
+    .hum2 {
+        display: none;
+    }
 }
 
 
@@ -795,14 +870,6 @@ footer {
         float: none;
     }
 
-    h1 {
-        font-size: 75px !important;
-    }
-
-    h2 {
-        font-size: 40px !important;
-    }
-
     .choose {
         display: flex;
         align-items: center;
@@ -810,26 +877,26 @@ footer {
     }
 
     .circle {
-        margin-left: 245px;
-        width: 120px;
-        height: 120px;
+        margin-left: 30px;
+        width: 150px;
+        height: 150px;
         position: relative;
-        margin-top: 235px;
+        margin-top: -175px;
     }
 
     .circle-dashed {
-        width: 100px;
-        height: 100px;
-        top: 10px;
-        left: 10px;
+        width: 125px;
+        height: 125px;
+        top: 12px;
+        left: 12px;
     }
 
     .c-number {
-        font-size: 27px;
+        font-size: 30px;
     }
 
     .c-only {
-        font-size: 21px;
+        font-size: 25px;
         font-weight: lighter;
     }
 
@@ -839,20 +906,28 @@ footer {
     }
 
     .hum1,
-    .hum3 {
+    .hum3,
+    .logo-number {
         display: none;
+    }
+
+    h1 {
+        font-size: 4rem !important;
+    }
+
+    .img-content {
+        padding: 0;
     }
 
     .f-input {
         display: flex;
         gap: 25px;
-        margin: 90px;
+        margin: 90px auto;
         flex-direction: column;
     }
 
     .btn-find {
         background: #bf2222;
-        width: 375px;
         height: 65px;
         border-radius: 7px;
     }
@@ -895,8 +970,8 @@ footer {
         padding: 30px;
     }
 
-    .footer {
-        padding: 30px;
+    .img-post1 {
+        width: 82%;
     }
 
     .f-footer {
@@ -907,6 +982,24 @@ footer {
         align-items: center;
     }
 
+    .slider {
+        height: 800px;
+        margin: 30px auto 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .nav-m {
+        margin-top: 210px;
+    }
+
+    .img-slide img {
+        width: 660px;
+        height: 445px;
+        background-size: cover;
+    }
 
 }
 
@@ -915,6 +1008,24 @@ footer {
     .container-post1 {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    #menu li a {
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    .title-slide {
+        padding: 50px 10px 20px;
+    }
+
+    .nav-m {
+        margin-top: 330px;
+    }
+
+    .form input {
+        width: 250px;
+        margin: 0px auto;
     }
 
 }
