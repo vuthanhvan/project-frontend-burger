@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class=" header ">
+            <div class="menu-container   ">
+                <div class="nav menu-nav container">
+                    <div class="title">
+                        <h2> <a href="#"><img src="./img/logo.png" alt=""></a></h2>
+                        <div class="logo-number">
+                            <div class="img-number"> <img src="./img/Vector Smart Object.png" alt=""></div>
+                            <p class="t-number">Express Delivery <span><a href="#" style=" color: #3d2514;">+1 234 567
+                                        890</a></span></p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <ul id="menu" class="flex flex-end ">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#" class="style-contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <div class="content-header container ">
+                    <div class="txt-header">
+                        <div class="txt-1">
+                            <h3> It is a good time for the great taste burgers</h3>
+                        </div>
+                        <h1>Burger</h1>
+                        <h2>week</h2>
+                    </div>
+                    <a class="img-content">
+                        <div class="img-h-hum">
+                            <!-- <img src="./img/h-hum.png" alt=""> -->
+                        </div>
+                        <div class="circle">
+                            <div class="circle-dashed">
+                                <div class="c-txt white1">
+                                    <span class="c-number white1">$5.</span> 49<br>
+                                    <div class="c-only-txt"><span class="c-only white1">ONLY</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </header>
+    <script setup>
+
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('.nav').addClass('banner');
+            } else {
+                $('.nav').removeClass('banner');
+            }
+        })
+    </script>
+
+    <main>
+        <div class="post1">
+            <div class="content-post1">
+                <a href="#" class="img-post1">
+                    <span class="p"> Try it today</span>
+                    <p> most popular burger</p>
+                </a>
+
+                <div class="c-post1">
+                    <a href="#">
+                        <div class="img2-post1">
+                            <span class="p"> Try it today</span>
+                            <p>most fun </p>
+                            <p> most taste</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="img3-post1">
+                            <span class="p">Try it today </span>
+                            <p>fresh & chili</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-click">
+            <a href="#">Always tasty burger</a>
+        </div>
+        <div class="txt-main">
+            <h2>CHOOSE & ENJOY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Quis ipsum suspendisses ultrices gravide. Risus commodo viverra maecenas accumsan lacus vel facilisic.
+            </p>
+        </div>
+        <div class="choose container1">
+            <div class=" hum hum1">
+                <div class="img-hum1"></div>
+                <div class="txt-hum">
+                    <h3>LOREM IPSUM DOLLOR</h3>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</P>
+                    <a href="#"> ORDER NOW</a>
+                </div>
+            </div>
+            <div class="hum hum2">
+                <div class="img-hum2"></div>
+                <div class="txt-hum">
+                    <h3>LOREM IPSUM DOLLOR</h3>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</P>
+                    <a href="#"> ORDER NOW</a>
+                </div>
+            </div>
+            <div class="hum hum3">
+                <div class="img-hum1"></div>
+                <div class="txt-hum">
+                    <h3>LOREM IPSUM DOLLOR</h3>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</P>
+                    <a href="#"> ORDER NOW</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="slider container">
+            <div class="title-slide">
+                <h4>DISCOVER</h4>
+                <H1>UPCOMMING EVENTS</H1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et
+                    dolore magna aliqua.
+                    Quis ipsum suspendisses ultrices gravide. Risus commodo viverra maecenas accumsan lacus vel
+                    facilisic.
+                </p>
+
+
+
+            </div>
+
+
+            <div class="img-slide">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/Burger Image3.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/Burger Image3.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/Burger Image3.png" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        <div class=" form-container">
+            <div class="img-humber"></div>
+
+            <div class="form ">
+                <h4>Reservation</h4>
+                <h2>Book your table</h2>
+                <form action="" class="f-input">
+                    <input id="name" name="name" type="text" value="" placeholder="NAME">
+                    <input id="email" name="email" type="text" value="" placeholder="EMAIL">
+                    <input id="date" type="date" name="date" value="" placeholder="DATE" required>
+                    <input id="time" type="time" name="time" value="" placeholder="TIME" required>
+                    <input id="people" name="people" type="text" value="" placeholder="PEOPLE">
+                    <button class="btn-find">FIND A TABLE</button>
+                </form>
+
+            </div>
+
+            <div class="img-bottle"></div>
+            <div class="img-dia"></div>
+        </div>
+
+
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer">
+            <div class="img-logo-ft"></div>
+            <div class="txt-ft ">
+                <div class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et
+                    dolore magna aliqua.
+                    Quis ipsum suspendisses ultrices gravide. Risus commodo viverra maecenas accumsan lacus vel
+                    facilisic.
+                </div>
+                <div class="txt-add ">
+
+                    <div class="add">
+                        <div class="img-add"></div>
+                        <p class="white"> Main Road, Building Name, Country</p>
+                    </div>
+                    <div class="gmail">
+                        <div class="img-gmail"></div>
+                        <p class="white"> info@companyname.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="f-footer">
+                <div class="white">© Company Name 2020. All rights reserved.</div>
+                <div class="social">
+                    <a href="#">
+                        <div class="logo-ins logo-f"></div>
+                    </a>
+                    <a href="#">
+                        <div class="logo-face logo-f"></div>
+                    </a>
+                    <a href="#">
+                        <div class="logo-twi logo-f"></div>
+                    </a>
+                    <a href="#">
+                        <div class="logo-whatapp logo-f"></div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
