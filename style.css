@@ -440,6 +440,11 @@ main {
     padding: 50px 20px 50px 50px;
 }
 
+.title-slide p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .img-slide {
     padding: 20px 20px 20px 0;
 }
