@@ -464,13 +464,17 @@ main {
     padding: 2em 0 0;
     opacity: 1;
     transform: translateY(0px);
-
+    position: relative;
 }
 
 .form {
     max-width: 820px;
     margin: 0px auto;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .form h4 {
@@ -598,6 +602,8 @@ footer {
     margin-bottom: 45px;
     width: 410px;
     height: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(./img/Place\ Your\ Logo\ Here\ \(Double\ Click\ to\ Edit\)1.png);
 }
 
@@ -610,6 +616,16 @@ footer {
 .txt-add {
     padding-left: 100px;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.add,
+.gmail {
+    display: flex;
+    align-items: center;
 }
 
 .white {
@@ -642,10 +658,15 @@ footer {
 .f-footer {
     margin-top: 130px;
     color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .social {
     margin-right: -30px;
+    display: flex;
 }
 
 .social a {
@@ -891,6 +912,15 @@ footer {
         background-size: cover;
     }
 
+    .footer {
+        padding: 10px;
+    }
+
+    .img-logo-ft {
+
+        background-size: 23rem;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -917,5 +947,16 @@ footer {
         width: 250px;
         margin: 0px auto;
     }
+
+    .txt-ft {
+        display: none;
+    }
+
+    .img-logo-ft {
+
+        background-size: 13rem;
+    }
+
+
 
 }
