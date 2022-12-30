@@ -47,13 +47,6 @@ a {
     display: block;
 }
 
-.flex {
-    display: flex;
-}
-
-.flex-end {
-    justify-content: flex-end;
-}
 
 .has-two-col {
     display: flex;
@@ -64,18 +57,9 @@ a {
 
 /* Header */
 
-/* header {
-    height: 100vh;
-    color: #3d2514;
-    background-image: url(./img/bg-Rectangle.png);
-} */
 
 .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 30px 0px 0;
-
 }
 
 .title1 {
@@ -90,10 +74,6 @@ a {
 .t-number {
     margin-top: 5px;
     font-weight: bold;
-}
-
-.logo-number {
-    display: flex;
 }
 
 .img-number {
@@ -126,14 +106,13 @@ a {
     color: #ffffff;
 }
 
-
 .content {
     background-image: url(./img/bg-Rectangle.png);
     height: 100vh;
     /* width: 200%; */
     overflow: hidden;
     padding: 8em 0 4em;
-    position: relative;
+
     opacity: 1;
     transform: translateY(0px);
 }
@@ -158,12 +137,6 @@ a {
     background-repeat: no-repeat;
     width: 500px;
     height: 400px;
-}
-
-.txt-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .txt-1 {
@@ -194,22 +167,17 @@ a {
 
 .circle {
     background: #bf2222;
-    border-radius: 50%;
     width: 175px;
     height: 175px;
-    position: relative;
     margin-top: -180px;
+    border-radius: 50%;
+    position: relative;
 }
 
 .circle-dashed {
-    border-radius: 50%;
     border: 4px dashed #f0e8e0;
     width: 150px;
     height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     top: 11px;
     left: 11px;
 }
@@ -312,9 +280,6 @@ main {
 
 
 .b-click {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     margin: 70px 0 40px;
 }
 
@@ -345,31 +310,14 @@ main {
     width: 100%;
 }
 
-.choose {
-    display: flex;
-    justify-content: center;
-}
-
 .hum {
     width: 450px;
     height: 600px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-/* .hum1 {
-    width: 450px;
-    height: 600px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-} */
-
+}
 
 .img-hum1 {
     width: 400px;
@@ -389,11 +337,6 @@ main {
 }
 
 .txt-hum {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
     padding: 0 30px;
 }
 
@@ -440,8 +383,6 @@ main {
 }
 
 .title-slide {
-    display: flex;
-    flex-direction: column;
     padding: 50px 20px 50px 50px;
 }
 
@@ -460,8 +401,6 @@ main {
     background-size: cover;
 }
 
-
-
 .img-slide {
 
     border-radius: 10px;
@@ -471,7 +410,6 @@ main {
 .slides {
     width: 600%;
     height: 500px;
-    display: flex;
 }
 
 .slides input {
@@ -483,10 +421,7 @@ main {
     transform: 2s;
 }
 
-
 .nav-m {
-    position: absolute;
-    display: flex;
     margin-top: 400px;
 }
 
@@ -518,40 +453,6 @@ main {
     margin-left: -40%;
 }
 
-
-.nav-auto {
-
-    position: absolute;
-    margin-top: 430px;
-    display: flex;
-    left: 408px;
-    opacity: 1;
-
-}
-
-.nav-auto div {
-    padding: 10px;
-    border-radius: 10px;
-    transition: 2s;
-
-}
-
-.nav-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked~.nav-auto .a-b1 {
-    background-color: #ffc045;
-}
-
-#radio2:checked~.nav-auto .a-b2 {
-    background-color: #ffc045;
-}
-
-#radio3:checked~.nav-auto .a-b3 {
-    background-color: #ffc045;
-}
-
 /* the end slide */
 
 .form-container {
@@ -561,7 +462,6 @@ main {
     background: #ffffff;
     overflow: hidden;
     padding: 2em 0 0;
-    position: relative;
     opacity: 1;
     transform: translateY(0px);
 
@@ -571,10 +471,6 @@ main {
     max-width: 820px;
     margin: 0px auto;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .form h4 {
@@ -711,25 +607,13 @@ footer {
     /* gap: 150px; */
 }
 
-
-
 .txt-add {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     padding-left: 100px;
     color: #ffffff;
 }
 
-.add,
-.gmail {
-    display: flex;
-    align-items: center;
-}
-
 .white {
     color: #ffffff;
-
     font-size: 16.67px;
 }
 
@@ -753,22 +637,14 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 35px;
-
 }
 
-
 .f-footer {
-    display: flex;
     margin-top: 130px;
-    justify-content: space-between;
-    align-items: center;
     color: #ffffff;
 }
 
-
-
 .social {
-    display: flex;
     margin-right: -30px;
 }
 
@@ -800,10 +676,7 @@ footer {
     background-image: url(./img/Twitter.png);
 }
 
-
 /* Cuộn menu */
-
-
 
 .menu-container {
     margin: 0 auto;
@@ -815,15 +688,9 @@ footer {
 
 }
 
-
 .menu-nav {
     width: 100%;
     position: relative;
-
-}
-
-.nav {
-    flex-direction: column;
 }
 
 .hidden {
@@ -840,16 +707,9 @@ footer {
     padding-top: 15px;
 }
 
-/* .nav.banner {
-    height: 5rem;
-    padding: 10px;
-    z-index: 1000;
-    width: 100%;
-    /* max-width: 1400px; */
-/* margin: 0px auto;
+.logo-number {
     display: flex;
-    flex-direction: row;
-} */
+}
 
 @media screen and (max-width: 1100px) {
     .hum {
