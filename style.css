@@ -57,13 +57,20 @@ a {
 
 /* Header */
 
+.menu-nav {
+    flex-direction: column;
+}
 
 .title {
     padding: 30px 0px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title1 {
     padding-top: 5px;
+
 
 }
 
@@ -109,10 +116,9 @@ a {
 .content {
     background-image: url(./img/bg-Rectangle.png);
     height: 100vh;
-    /* width: 200%; */
     overflow: hidden;
     padding: 8em 0 4em;
-
+    position: relative;
     opacity: 1;
     transform: translateY(0px);
 }
@@ -125,10 +131,6 @@ a {
     padding: 0 30px;
 }
 
-.img-content {
-    padding: 100px 0 0;
-
-}
 
 .img-h-hum {
     background-image: url(./img/h-hum.png);
@@ -137,6 +139,7 @@ a {
     background-repeat: no-repeat;
     width: 500px;
     height: 400px;
+    margin-top: 40px;
 }
 
 .txt-1 {
@@ -150,8 +153,14 @@ a {
     font-weight: 100;
 }
 
+.txt-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .txt-header h1 {
-    font-size: 125px;
+    font-size: 100px;
     font-family: Roboto, sans-serif;
     text-transform: uppercase;
     text-shadow: 3px 3px 0px #f0e8e0;
@@ -172,6 +181,9 @@ a {
     margin-top: -120px;
     border-radius: 50%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .circle-dashed {
@@ -180,6 +192,11 @@ a {
     height: 150px;
     top: 11px;
     left: 11px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .c-number {
@@ -475,6 +492,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .form h4 {
@@ -661,8 +679,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 
 }
+
 
 .social {
     margin-right: -30px;
@@ -770,6 +790,10 @@ footer {
     .logo-number {
         display: none;
     }
+
+    #menu li a {
+        font-size: 15px;
+    }
 }
 
 
@@ -779,7 +803,19 @@ footer {
         margin: 0px auto;
         width: 100%;
         float: none;
+    }
 
+    #menu li a {
+        font-size: 13px;
+    }
+
+    .title img {
+        width: 10rem;
+    }
+
+    .post-f {
+        color: #ffffff;
+        font-size: 13px;
     }
 
     .choose {
@@ -822,12 +858,22 @@ footer {
         display: none;
     }
 
+    .img-h-hum {
+        width: 400px;
+        height: 300px;
+    }
+
     h1 {
         font-size: 4rem !important;
     }
 
     .img-content {
         padding: 0;
+    }
+
+    .txt-header h2,
+    .txt-main h2 {
+        font-size: 40px;
     }
 
     .f-input {
@@ -846,7 +892,7 @@ footer {
     .content-header {
         display: flex;
         flex-direction: column;
-        padding: 100px 40px 30px;
+        padding: 45px 40px 30px;
     }
 
     .img-content img {
@@ -918,21 +964,48 @@ footer {
 
     .img-logo-ft {
 
-        background-size: 23rem;
+        background-size: 16rem;
+    }
+
+    .img-logo-ft {
+        margin: 0px !important;
     }
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
+    .title {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
 
     .container-post1 {
         display: flex;
         flex-direction: column-reverse;
     }
 
+    #menu1 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    #menu li a {
+        font-size: 10px;
+    }
+
+
+
     #menu li a {
         display: inline-block;
         font-size: 12px;
+    }
+
+    .img-h-hum {
+        width: 300px;
+        height: 230px;
     }
 
     .title-slide {
@@ -948,13 +1021,13 @@ footer {
         margin: 0px auto;
     }
 
-    .txt-ft {
-        display: none;
+    .txt-add {
+        padding: 0px;
     }
 
     .img-logo-ft {
 
-        background-size: 13rem;
+        background-size: 13rem !important;
     }
 
 
