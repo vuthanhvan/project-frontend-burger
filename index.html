@@ -7,17 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="menu-container">
     <header>
         <div class=" header ">
-            <div class="menu-container   ">
+            <div class="menu-container">
                 <div class="nav menu-nav container">
                     <div class="title">
                         <h2> <a href="#"><img src="./img/logo.png" alt=""></a></h2>
+
+                        <div id="menu1">
+                            <ul id="menu" class="flex flex-end ">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#" class="style-contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+
                         <div class="logo-number">
                             <div class="img-number"> <img src="./img/Vector Smart Object.png" alt=""></div>
                             <p class="t-number">Express Delivery <span><a href="#" style=" color: #3d2514;">+1 234 567
@@ -25,7 +37,7 @@
                         </div>
                     </div>
 
-                    <div class="">
+                    <div id="menu2" class="hidden">
                         <ul id="menu" class="flex flex-end ">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Menu</a></li>
@@ -35,8 +47,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="content">
                 <div class="content-header container ">
                     <div class="txt-header">
@@ -46,7 +56,7 @@
                         <h1>Burger</h1>
                         <h2>week</h2>
                     </div>
-                    <a class="img-content">
+                    <a class="img-content" id="img-content">
                         <div class="img-h-hum">
                         </div>
                         <div class="circle">
@@ -61,16 +71,6 @@
                 </div>
             </div>
     </header>
-    <script setup>
-
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop()) {
-                $('.nav').addClass('banner');
-            } else {
-                $('.nav').removeClass('banner');
-            }
-        })
-    </script>
 
     <main>
         <div class="post1">
@@ -187,16 +187,7 @@
                 <div class="a-b3"></div>
             </div> -->
 
-            <script type="text/javascript">
-                var counter = 1;
-                setInterval(function () {
-                    document.getElementById('radio' + counter).checked = true;
-                    counter++;
-                    if (counter > 3) {
-                        counter = 1;
-                    }
-                }, 5000);
-            </script>
+
 
 
 
@@ -229,7 +220,7 @@
 
 
     </main>
-    <script src="script.js"></script>
+
     <footer>
         <div class="footer">
             <div class="img-logo-ft"></div>
@@ -276,6 +267,43 @@
 
     </footer>
 
+    <script type="text/javascript">
+
+        const menu1 = document.getElementById("menu1");
+        const menu2 = document.getElementById("menu2");
+        const content = document.getElementById("menu-container");
+
+        document.addEventListener("scroll", () => {
+            let contentRect = content.getBoundingClientRect();
+            if (contentRect.top > 0) {
+                menu1.classList.add('hidden');
+                menu2.classList.remove('hidden');
+            } else {
+
+                menu2.classList.add('hidden');
+                menu1.classList.remove('hidden');
+            }
+
+            if ($(window).scrollTop()) {
+                $('.title').addClass('title1');
+            } else {
+                $('.title').removeClass('title1');
+            }
+        });
+
+
+
+
+
+        let counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 3000);
+    </script>
 
 </body>
 
